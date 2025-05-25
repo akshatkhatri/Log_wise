@@ -1,0 +1,6 @@
+152.53.248.175 - - [24/May/2025:06:17:29 +0000] "CONNECT www.google.com:443 HTTP/1.1" 400 166 "-" "-"
+185.218.84.178 - - [24/May/2025:06:26:05 +0000] "GET / HTTP/1.1" 200 396 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46"
+206.168.34.223 - - [24/May/2025:06:26:06 +0000] "GET / HTTP/1.1" 200 396 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+206.168.34.223 - - [24/May/2025:06:26:11 +0000] "GET /favicon.ico HTTP/1.1" 404 134 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+206.168.34.223 - - [24/May/2025:06:26:12 +0000] "PRI * HTTP/2.0" 400 166 "-" "-"
+206.168.34.223 - - [24/May/2025:06:26:17 +0000] "GET /favicon.ico HTTP/1.1" 404 134 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"

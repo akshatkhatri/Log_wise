@@ -1,0 +1,13 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /logs/*.log   # This should match where logs are inside the container
+
+output.kafka:
+  hosts: ["kafka:9092"]
+  topic: "nginx-logs"
+  codec.format:
+    string: '%{[@timestamp]} %{[message]}'
+
+
