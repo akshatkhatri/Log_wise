@@ -46,8 +46,8 @@ from kafka import KafkaConsumer
 
 # Settings
 TOPIC = 'nginx-logs'
-MAX_MESSAGES = 10
-MAX_WAIT_SECONDS = 60
+MAX_MESSAGES = 100
+MAX_WAIT_SECONDS = 120
 
 # Load your base data and model
 base_log_df = log_data_to_df('final_access.log')

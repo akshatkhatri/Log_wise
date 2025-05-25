@@ -55,3 +55,5 @@
 172.21.0.1 - - [25/May/2025:10:20:45 +0000] "GET / HTTP/1.1" 200 21 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
 172.21.0.1 - - [25/May/2025:10:20:45 +0000] "GET / HTTP/1.1" 200 21 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
 172.21.0.1 - - [25/May/2025:10:20:46 +0000] "GET / HTTP/1.1" 200 21 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+172.22.0.1 - - [25/May/2025:13:52:23 +0000] "GET / HTTP/1.1" 200 21 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+172.22.0.1 - - [25/May/2025:13:52:23 +0000] "GET /favicon.ico HTTP/1.1" 499 0 "http://localhost:8080/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
