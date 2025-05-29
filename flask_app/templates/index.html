@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SmartLog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    form {
+      margin-top: 30px;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 6px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 6px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 30px auto;
+      border: 1px solid #ccc;
+    }
+.dashboard-link {
+  display: block;
+  width: 90%;
+  max-width: 300px;
+  margin: 25px auto;
+  padding: 30px 100px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-link:hover {
+    background-color: #0056b3;
+}
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 95%;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  form label {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  form input,
+  form select {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  form button {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <h1>S.M.A.R.T. = Secure Monitoring & Analysis of Real-time Traffic</h1>
+  <h2>Live Traffic Analysis using Machine Learning</h2>
+
+  <p> 
+SmartLog is a real-time, containerized log analysis system hosted on an Azure VM. It uses Filebeat, Kafka, and a Python ML pipeline with custom transformers to detect suspicious HTTP traffic. Logs are stored in PostgreSQL, while live dashboards are built in Grafana. Docker Compose manages all services, enabling modular deployment and easy scaling.
+ </p>
+
+  <div class="links">
+    <a href="https://smartlog.tech/grafana/public-dashboards/961154c615664bc98f5522bd9a6bb576" class = "dashboard-link" target="_blank">📊 Traffic Overview Dashboard</a>
+    <a href="https://smartlog.tech/grafana/public-dashboards/8725615027fe44ae9c46ce94115a0a1e"class = "dashboard-link" target="_blank">🔍 Threat Detection Dashboard</a>
+    
+  </div>
+  
+<div style="background-color: #ffe5e5; border-left: 6px solid #e60000; padding: 12px 16px; margin-top: 20px; margin-bottom: 20px; border-radius: 4px;">
+  <strong>Note:</strong> If possible, please fill the feedback form below — it greatly helps me train a better model. Thank you!
+</div>
+
+
+  <img src="/static/flowchart.png" alt="Architecture Flowchart">
+
+      <h1>SmartLog Feedback Form(For Training on Human data)</h1>
+      {% if submitted %}
+          <p style="color: green; font-weight: bold; text-align: center;">
+              ✅ Thank you for your feedback!
+          </p>
+      {% endif %}
+      
+      <form action="/submit-feedback" method="POST">
+          <label for="name">Your Name</label>
+          <input type="text" name="name" required>
+  
+          <label for="network_type">Network Type</label>
+          <select name="network_type" required>
+              <option value="">Select</option>
+              <option>WiFi (Home/Private)</option>
+              <option>Mobile Network</option>
+              <option>Public/Institutional WiFi</option>
+              <option>Behind CGNAT</option>
+          </select>
+  
+          <label for="vpn_proxy">Are you using a VPN or Proxy?</label>
+          <select name="vpn_proxy" required>
+              <option value="">Select</option>
+              <option>Yes</option>
+              <option>No</option>
+              <option>Not Sure</option>
+          </select>
+  
+          <label for="device_ownership">Is this your personal device?</label>
+          <select name="device_ownership" required>
+              <option value="">Select</option>
+              <option>Private Device</option>
+              <option>Public/Shared Device</option>
+          </select>
+  
+          <label for="device_type">Device Type</label>
+          <select name="device_type" required>
+              <option value="">Select</option>
+              <option>Desktop</option>
+              <option>Laptop</option>
+              <option>Mobile</option>
+              <option>Tablet</option>
+          </select>
+  
+          <label for="trust_level">How much do you trust this device/network?</label>
+          <select name="trust_level" required>
+              <option value="">Select</option>
+              <option>Fully Trusted</option>
+              <option>Somewhat Trusted</option>
+              <option>Untrusted</option>
+          </select>
+  
+          <label for="surprise_flagged">Have you ever been flagged as a bot on other sites?</label>
+          <select name="surprise_flagged" required>
+              <option value="">Select</option>
+              <option>Yes</option>
+              <option>No</option>
+              <option>Not Sure</option>
+          </select>
+  
+          <label for="browser">Browser Used</label>
+          <select name="browser" required>
+              <option value="">Select</option>
+              <option>Chrome</option>
+              <option>Firefox</option>
+              <option>Edge</option>
+              <option>Safari</option>
+              <option>Other</option>
+          </select>
+  
+          <label for="traffic_type">What were you doing when visiting this page?</label>
+          <input type="text" name="traffic_type" placeholder="e.g. Just browsing, testing my IP, etc.">
+  
+          <label for="user_label">How would you label yourself?</label>
+          <select name="user_label" required>
+              <option value="">Select</option>
+              <option>Human User</option>
+              <option>Bot (for testing)</option>
+              <option>Other</option>
+          </select>
+  
+           <input type="submit" value="Submit">
+      </form>
+  
+</body>
+</html>

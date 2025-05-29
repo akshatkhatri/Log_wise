@@ -1,2 +1,6 @@
 /.mypy_cache
 /model_env
+grafana/grafana.db
+grafana/png/
+grafana/pdf/
+grafana/csv/

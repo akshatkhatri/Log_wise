@@ -87,6 +87,8 @@ for message in consumer:
     buffer.append(message.value)
 
     time_elapsed = time.time() - start_time
+    if time_elapsed % 10 == 0:
+        print(time_elapsed)
     if len(buffer) > 0 and (len(buffer) >= MAX_MESSAGES or time_elapsed >= MAX_WAIT_SECONDS):
         print(f"\n>>> Triggering batch processing ({len(buffer)} logs, {time_elapsed:.2f}s elapsed)")
 
