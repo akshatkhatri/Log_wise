@@ -14,10 +14,10 @@ Detect bot traffic and hidden patterns in server logs **in real time** using a p
 
 ---
 
-## 🧱 Architecture Overview
-
+## 🧱 Architecture Diagram
 ![Architecture Flowchart](flowchart.jpeg)
 
+## 🧱 Architecture Overview
 1. **Log Generation & Ingestion**  
    - **Source**: Nginx/access logs  
    - **Collector**: Filebeat tails logs continuously  
