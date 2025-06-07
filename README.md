@@ -152,10 +152,9 @@ Logs are rich but often ignored in student projects. With SmartLog, the goals we
    #   FLASK_SECRET_KEY, etc.
    
 ## 🚀 Build & Run
-
-```bash
+``` bash
 docker-compose up --build
-
+```
 ## 🔗 Access
 
 - Frontend: http://localhost:8080  
