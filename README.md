@@ -16,7 +16,7 @@ Detect bot traffic and hidden patterns in server logs **in real time** using a p
 
 ## 🧱 Architecture Overview
 
-![Architecture Flowchart](docs/flowchart.png)
+![Architecture Flowchart](flowchart.jpeg)
 
 1. **Log Generation & Ingestion**  
    - **Source**: Nginx/access logs  
