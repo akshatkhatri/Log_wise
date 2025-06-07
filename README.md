@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue)]()  
 [![Docker Compose](https://img.shields.io/badge/docker--compose-v2.0%2B-blue)]()
 
-**SmartLog** is a full-stack, real-time, intelligent log-analysis system designed to detect bot activity and uncover hidden patterns in web server logs. It blends DevOps, backend engineering, streaming data processing, and machine learning in a resource-constrained setup (1 GB Azure VM behind CGNAT).
+**SmartLog** is a full-stack, real-time, intelligent log-analysis system designed to detect bot activity and uncover hidden patterns in web server logs. It blends DevOps, backend engineering, streaming data processing, and machine learning in a resource-constrained setup (4 GB Azure VM).
 
 ---
 
