@@ -1,4 +1,4 @@
-# SmartLog  [S.M.A.R.T. = Secure Monitoring & Analysis of Real-time Traffic]
+# SmartLog Secure Monitoring & Analysis of Real-time Traffic
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue)]()  
