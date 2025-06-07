@@ -75,7 +75,7 @@ All services containerized via **Docker Compose**:
 - Python Kafka consumer (ML pipeline)  
 - Cron job container for retraining
 
-**Runs on** a free-tier Azure VM (Ubuntu, 1 GB RAM, CGNAT – use port-forwarding or ngrok for testing).
+**Runs on** a free-tier Azure VM (Ubuntu, 4 GB RAM, CGNAT – use port-forwarding or ngrok for testing).
 
 ---
 
